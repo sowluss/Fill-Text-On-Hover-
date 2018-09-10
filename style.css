@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; 
+}
+
+/* #fa8072 */
+
+.text::before {
+  content: 'peter';
+  color: #fa8072;
+   position: absolute;
+  width: 0;
+   overflow: hidden;
+   transition: 0.9s;
+}
+
+.text:hover::before {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-top: 200px;
+  margin-left: 800px;
+}
